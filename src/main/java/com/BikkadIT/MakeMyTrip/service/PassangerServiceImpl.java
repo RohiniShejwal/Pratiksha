@@ -23,6 +23,9 @@ public class PassangerServiceImpl implements PassangerServiceI {
 
 	@Autowired
 	private PassangerRepository passangerRepository;
+
+	@Autowired
+	private PassangerRepository passangerRepository;
 	
 	@Autowired
 	private TicketRepository ticketRepository;

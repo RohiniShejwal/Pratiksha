@@ -30,6 +30,11 @@ public class PassangerController {
 	   return new ResponseEntity<Ticket>(saveData, HttpStatus.OK);	
 	}
 	
+	@PostMapping(value= "/SaveData", consumes = "application/json")
+	public ResponseEntity<Ticket> savedata(@RequestBody Passanger psng){
+		Ticket saveData = passangerServiceI.SaveData(psng);
+	   return new ResponseEntity<Ticket>(saveData, HttpStatus.OK);	
+	}
 	
 	//Get Data
 	
